@@ -26,18 +26,3 @@
     align-items: center;
   }
 }
-
-button {
-    font-weight: 700;
-    font-size: 15px;
-  margin: 2rem;
-  padding: 1cqh 3rem;
-  background-color: $lightnavy;
-  border: 1px solid $green;
-  border-radius: 5px;
-  color: $green;
-  &:hover {
-    background-color: $green;
-    color: $lightnavy;  
-    border: 1px solid $lightnavy;  }
-}

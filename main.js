@@ -17,6 +17,7 @@ for (var i = 0; i < anchors.length; i++) {
 }
 toggle.addEventListener("click", toggleMenu);
 
+// Close Nav Bar if anywhere is clicked
 document.onclick = function (e) {
   if (!menu.contains(e.target) && !icon.contains(e.target)) {
     menu.classList.remove("open");

@@ -14,13 +14,40 @@
     font-size: 1.75rem;
   }
   & p {
-    padding: 1em 0;
+    padding: 1rem 0;
   }
   & ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    padding: 0.75rem 0;
   }
   & li {
     list-style: none;
+    background-color: #112b3a;
+    color: $green;
+    border-radius: 0.5rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
+
+@include tablet {
+  .project {
+    margin: 8rem 0;
+    & p {
+      background-color: $lightnavy90;
+      width: 60%;
+      padding: 1rem 2rem;
+    }
+
+    & img {
+      position: absolute;
+      right: 0;
+      display: block;
+      filter: blur(0.005px);
+      height: 300px;
+      z-index: -1;
+      padding: 0 0 2rem 0;
+    }
   }
 }
