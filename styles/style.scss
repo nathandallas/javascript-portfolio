@@ -55,3 +55,13 @@ h4 {
     }
   }
 }
+
+/* DESKTOP SOCIALS */
+
+.socials-desktop {
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}

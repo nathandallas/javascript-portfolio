@@ -5,9 +5,27 @@ footer {
   text-align: center;
 }
 
-.socials img {
-  width: 100px;
-  height: 100px;
-  fill: currentColor;
-  color: $lightestslate;
+.socials {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem
+  }
+  &-mobile {
+    @include tablet {
+      display: none;
+    }
+  }
+  &-desktop {
+    display: none;
+  }
+  & img {
+    width: 50px;
+    fill: currentColor;
+    color: $lightestslate;
+    margin: 0.5rem;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
