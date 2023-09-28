@@ -1,12 +1,11 @@
 @import "partials";
 
 .project {
-
+  margin: 6rem 0;
   & img {
-    display: none; 
+    display: none;
   }
-  &__container{
-    margin: 2rem ;
+  &__container {
     position: relative;
     background-color: $navylowop;
     height: auto;

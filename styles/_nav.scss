@@ -27,8 +27,6 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
-  @include desktop {
-  }
 }
 
 .logo {
@@ -68,11 +66,13 @@ nav {
 }
 
 .menu-links {
+    display: block;
   position: absolute;
   top: 100%;
   right: 0;
   background-color: $navy;
   width: 75vw;
+  height: 100vh;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -94,7 +94,7 @@ nav {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 200vh;
 }
 
 .hamburger-icon.open span:first-child {

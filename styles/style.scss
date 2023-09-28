@@ -1,4 +1,7 @@
 @import "nav";
+@import "about";
+@import "skills";
+@import "projects";
 @import "projects";
 @import "footer";
 @import "partials";
@@ -33,11 +36,24 @@ h3 {
   color: $white;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h4 {
   color: $green;
 }
 
-/* SECTION HEADERS */
+/* SECTION & HEADERS */
+
+section {
+  margin: 2rem;
+  @include tablet {
+    margin: 6rem auto;
+    width: 70vw;
+    max-width: 1000px;
+  }
+}
 
 .header {
   display: flex;
