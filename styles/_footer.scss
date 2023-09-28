@@ -1,0 +1,13 @@
+@import "partials";
+
+footer {
+  width: 100vw;
+  text-align: center;
+}
+
+.socials img {
+  width: 100px;
+  height: 100px;
+  fill: currentColor;
+  color: $lightestslate;
+}

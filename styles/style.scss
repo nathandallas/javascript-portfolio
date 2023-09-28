@@ -1,0 +1,57 @@
+@import "nav";
+@import "projects";
+@import "footer";
+@import "partials";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $lightslate;
+  background-color: $navy;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: $lightestslate;
+  text-decoration: none;
+  text-decoration-color: $lightestslate;
+  &:hover {
+    color: $green;
+  }
+}
+
+h2,
+h3 {
+  color: $white;
+}
+
+h4 {
+  color: $green;
+}
+
+/* SECTION HEADERS */
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  & span {
+    display: none;
+    @include tablet {
+      display: block;
+      background-color: $lightestnavy;
+      min-width: 30%;
+      width: auto;
+      height: 1px;
+      margin: 2rem;
+    }
+  }
+}

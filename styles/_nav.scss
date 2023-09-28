@@ -1,21 +1,6 @@
 @import "partials";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
 
 /* NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -43,21 +28,6 @@ nav {
   list-style: none;
   font-size: 1.5rem;
   @include desktop {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-  &hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
   }
 }
 
@@ -68,7 +38,7 @@ a {
   }
 }
 
-/* */
+/* MOBILE NAV */
 
 #hamburger-nav {
   display: flex;
@@ -92,18 +62,17 @@ a {
   & span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: $green;
     transition: all 0.3 ease-in-out;
   }
 }
-
 
 .menu-links {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
-  width: fit-content;
+  background-color: $navy;
+  width: 75vw;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -112,9 +81,12 @@ a {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: $lightslate;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
+    &:hover {
+      color: $green;
+    }
   }
   & li {
     list-style: none;

@@ -2,6 +2,7 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
 $navy: #0a192f;
+$navylowop: #0a192f99;
 $lightnavy: #112240;
 $lightestnavy: #233554;
 $slate: #8892b0;
@@ -10,17 +11,14 @@ $lightestslate: #ccd6f6;
 $white: #e6f1ff;
 $green: #64ffda;
 
-
 @mixin tablet {
-    @media screen and (min-width: $tablet-breakpoint) {
-        @content;
-    
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
   }
 }
 
 @mixin desktop {
-    @media screen and (min-width: $desktop-breakpoint) {
-        @content;
-
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
   }
 }

@@ -1,0 +1,29 @@
+@import "partials";
+
+.project {
+
+  & img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    filter: blur(10px);
+  }
+  &__container{
+    position: relative;
+    background-color: $navylowop;
+    width: 100%;
+    height: 18rem;
+  }
+  & h3 {
+    font-size: 1.75rem;
+  }
+  & ul {
+    display: flex;
+    gap: 1rem;
+  }
+  & li {
+    list-style: none;
+  }
+}
