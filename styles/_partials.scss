@@ -11,6 +11,7 @@ $lightslate: #a8b2d1;
 $lightestslate: #ccd6f6;
 $white: #e6f1ff;
 $green: #64ffda;
+$green90: #64ffda90;
 
 @mixin tablet {
   @media screen and (min-width: $tablet-breakpoint) {

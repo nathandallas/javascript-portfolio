@@ -33,6 +33,12 @@ a {
   }
 }
 
+h1 {
+  font-size: 3rem;
+  line-height: 2.75rem;
+}
+
+h1,
 h2,
 h3 {
   color: $white;
@@ -42,18 +48,24 @@ h2 {
   font-size: 2rem;
   width: 100%;
 }
+.alt {
+  line-height: 1.75rem;
+  color: $lightestslate;
+  padding: 0.5rem 0;
+}
 
 h4 {
   font-family: "Space Mono", monospace;
   color: $green;
+  font-size: 1.25rem;
 }
 
 button {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 15px;
-  margin: 2rem;
-  padding: 1cqh 3rem;
+  margin: 0.5rem 0;
+  padding: 1rem 3rem;
   background-color: $lightnavy;
   border: 1px solid $green;
   border-radius: 5px;
@@ -62,6 +74,60 @@ button {
     background-color: $green;
     color: $lightnavy;
     border: 1px solid $lightnavy;
+  }
+  &:focus {
+    background-color: $green90;
+  }
+}
+
+.logo {
+  color: $green;
+  border: 2px solid $green;
+  border-radius: 2rem;
+  width: 3rem;
+  text-align: center;
+  & a {
+    color: $green;
+  }
+}
+
+/* HERO */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid $lightestnavy;
+  padding-bottom: 2rem;
+  @include tablet {
+    margin: auto;
+    height: 70vh;
+    max-height: 800px;
+    border-bottom: none;
+  }
+  @include desktop {
+    & p {
+      max-width: 60%;
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  margin: 2rem;
+  @include tablet {
+    margin: 2rem 0;
+    max-width: 300px;
+  }
+  @include desktop {
+    flex-direction: row;
+    max-width: 60%;
+    justify-content: space-around;
+    & button {
+      width: 45%;
+      white-space: nowrap;
+    }
   }
 }
 
