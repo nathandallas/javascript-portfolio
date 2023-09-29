@@ -4,20 +4,27 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
   & ul {
-    width: 23%;
-    padding: 1rem 0;
+        width: 50%;
+      padding: 1rem 0;
+      @include desktop {
+          width: 23%;
+          
+    }
   }
 
   & li {
     list-style: none;
     padding: 0.5rem;
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #112b3a;
     color: $lightslate;
     border-radius: 0.5rem;
     border: 1px solid $lightnavy;
-
+    @include desktop {
+        font-size: 1.5rem;
+    }
   }
 }

@@ -40,6 +40,7 @@ h3 {
 
 h2 {
   font-size: 2rem;
+  width: 100%;
 }
 
 h4 {
@@ -77,17 +78,18 @@ section {
 
 .header {
   display: flex;
-  width: 99%;
   align-items: center;
+  justify-content: stretch;
+  white-space: nowrap;
+  width: 100%;
   & span {
     display: none;
     @include tablet {
-      display: block;
-      background-color: $lightestnavy;
-      min-width: 30%;
-      width: auto;
-      height: 1px;
-      margin: 2rem;
+      display: inline-block;
+      border-bottom: 1px solid $lightestnavy;
+      width: 100%;
+      float: right;
+      overflow: auto;
     }
   }
 }
