@@ -21,6 +21,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -69,14 +70,14 @@ section {
   margin: 2rem;
   @include tablet {
     margin: 6rem auto;
-    width: 70vw;
+    width: 60vw;
     max-width: 1000px;
   }
 }
 
 .header {
   display: flex;
-  width: 100%;
+  width: 99%;
   align-items: center;
   & span {
     display: none;
