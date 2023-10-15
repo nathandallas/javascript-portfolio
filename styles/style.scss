@@ -34,8 +34,14 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 3.75rem;
+  font-size: 3.5rem;
+  line-height: 3.25rem;
+  @include tablet {
+    font-size: 4rem;
+    line-height: 3.75rem;
+  }
+    
+
 }
 
 h1,
@@ -112,7 +118,7 @@ button {
     height: 70vh;
     max-height: 800px;
     border-bottom: none;
-    white-space: nowrap;
+    
 
     & p {
       max-width: 40rem;
