@@ -34,8 +34,8 @@ a {
 }
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 3.25rem;
+  font-size: 2.75rem;
+  line-height: 3rem;
   @include tablet {
     font-size: 3.75rem;
     line-height: 3.5rem;
@@ -77,27 +77,6 @@ h4 {
   font-size: 1.25rem;
 }
 
-button {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-size: 15px;
-  margin: 0.5rem 0;
-  padding: 1rem 3rem;
-  background-color: $lightnavy;
-  border: 1px solid $green;
-  border-radius: 5px;
-  color: $green;
-  max-width: 400px;
-  &:hover {
-    background-color: $green;
-    color: $lightnavy;
-    border: 1px solid $lightnavy;
-  }
-  &:focus {
-    background-color: $green90;
-  }
-}
-
 .logo {
   color: $green;
   border: 2px solid $green;
@@ -125,12 +104,32 @@ button {
   }
 }
 
+button {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0.5rem 0;
+  padding: 1rem 3rem;
+  background-color: $lightnavy;
+  border: 1px solid $green;
+  border-radius: 5px;
+  color: $green;
+  max-width: 90vw;
+  &:hover {
+    background-color: $green;
+    color: $lightnavy;
+    border: 1px solid $lightnavy;
+  }
+  &:focus {
+    background-color: $green90;
+  }
+}
+
 .btn-container {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  margin: 2rem;
-  min-width: 15rem;
+  margin: 1rem;
 
   @include tablet {
     margin: 2rem 0;
@@ -157,7 +156,7 @@ section {
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: stretch;
   white-space: nowrap;
   width: 100%;

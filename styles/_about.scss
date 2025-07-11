@@ -7,14 +7,14 @@
     margin: 0 auto;
     max-width: 70vw;
     @include tablet {
-      width: 15rem;
+      min-width: 15rem;
     }
     @include desktop {
       width: 30rem;
     }
   }
 
-  @include tablet {
+  @include desktop {
     flex-direction: row;
     align-items: center;
   }
