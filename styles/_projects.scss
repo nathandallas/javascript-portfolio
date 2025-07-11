@@ -43,6 +43,12 @@
       padding: 1rem 2rem;
     }
 
+  }
+}
+
+@include desktop {
+  .project {
+    
     & img {
       position: absolute;
       right: 0;

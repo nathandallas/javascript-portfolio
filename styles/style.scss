@@ -34,8 +34,16 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 3.75rem;
+  font-size: 3.5rem;
+  line-height: 3.25rem;
+  @include tablet {
+    font-size: 3.75rem;
+    line-height: 3.5rem;
+  }
+  @include desktop {
+    font-size: 4rem;
+    line-height: 3.75rem;
+  }
 }
 
 h1,
@@ -47,13 +55,17 @@ h3 {
 h2 {
   font-size: 2rem;
   width: 100%;
+  @include tablet {
+  }
+  @include desktop {
+  }
 }
 .alt {
-  font-size: 2.75rem;
-  line-height: 2.5rem;
+  font-size: 2.5rem;
+  line-height: 2.25rem;
   color: $lightestslate;
   padding: 0.5rem 0;
-  @include tablet {
+  @include desktop {
     font-size: 3rem;
     line-height: 2.75rem;
   }
@@ -104,20 +116,12 @@ button {
   justify-content: center;
   border-bottom: 1px solid $lightestnavy;
   padding-bottom: 2rem;
-  & p {
-    max-width: 30rem;
-  }
   @include tablet {
     margin: auto;
     height: 70vh;
     max-height: 800px;
     border-bottom: none;
     white-space: nowrap;
-
-    & p {
-      max-width: 40rem;
-      white-space:initial;
-    }
   }
 }
 
@@ -126,6 +130,8 @@ button {
   flex-direction: column;
   justify-content: stretch;
   margin: 2rem;
+  min-width: 15rem;
+
   @include tablet {
     margin: 2rem 0;
     flex-direction: row;
