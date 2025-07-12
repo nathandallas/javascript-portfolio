@@ -6,11 +6,10 @@
   text-align: center;
   flex-wrap: wrap;
   & ul {
-        width: 50%;
-      padding: 1rem 0;
-      @include desktop {
-          width: 23%;
-          
+    width: 50%;
+    padding: 1rem 0;
+    @include desktop {
+      width: 23%;
     }
   }
 
@@ -23,8 +22,11 @@
     color: $lightslate;
     border-radius: 0.5rem;
     border: 1px solid $lightnavy;
+    @include tablet {
+      min-width: 150px;
+    }
     @include desktop {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
   }
 }

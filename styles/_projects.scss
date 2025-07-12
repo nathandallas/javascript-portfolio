@@ -1,5 +1,27 @@
 @import "partials";
 
+.links a {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $lightnavy;
+  border: 1px solid $green;
+  border-radius: 5px;
+  color: $green;
+  padding: 1rem 0;
+  min-width: 250px;
+
+  &:hover {
+    background-color: $green;
+    color: $lightnavy;
+    border: 1px solid $lightnavy;
+  }
+  &:focus {
+    background-color: $green90;
+  }
+}
+
 .project {
   margin: 3rem 0;
   & img {
@@ -11,7 +33,10 @@
     height: auto;
   }
   & h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    @include tablet {
+      font-size: 1.75rem;
+    }
   }
   & p {
     padding: 1rem 0;
@@ -21,7 +46,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0.75rem 0;
-    max-width: 50%;
+    max-width: 65%;
   }
   & li {
     list-style: none;
@@ -35,20 +60,20 @@
 @include tablet {
   .project {
     margin: 1rem 0 6rem 0;
-
+    & ul {
+      flex-wrap: nowrap;
+    }
     & p {
       background-color: $lightnavy90;
       border-radius: 1rem;
       width: 60%;
       padding: 1rem 2rem;
     }
-
   }
 }
 
 @include desktop {
   .project {
-    
     & img {
       position: absolute;
       right: 0;

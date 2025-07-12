@@ -25,7 +25,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .logo {
@@ -41,9 +41,6 @@ nav {
   @include tablet {
     display: none;
   }
-}
-
-.hamburger-menu {
 }
 
 .hamburger-icon {

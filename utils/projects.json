@@ -1,0 +1,62 @@
+[
+  {
+    "imageSrc": "assets/qrcpreview.png",
+    "imageAlt": "QR Code Generator Preview",
+    "featuredText": "Featured Project",
+    "title": "QR Code Generator",
+    "description": "Generate QR Codes from any text or URL in black and white or custom color schemes.",
+    "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
+    "links": [
+      {
+        "text": "Code",
+        "url": "https://github.com/nathandallas/qr-code-generator",
+        "isExternal": true
+      },
+      {
+        "text": "Live Site",
+        "url": "https://nathandallas.github.io/qr-code-generator/",
+        "isExternal": true
+      }
+    ]
+  },
+  {
+    "imageSrc": "assets/rpspreview.png",
+    "imageAlt": "Rock Paper Scissors Preview",
+    "featuredText": "Featured Project",
+    "title": "Rock Paper Scissors",
+    "description": "Enjoy a quick game or five of rock paper scissors! This website features a responsive mobile to desktop layout and dark and light modes that default to system preferences.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Vite"],
+    "links": [
+      {
+        "text": "Code",
+        "url": "https://github.com/nathandallas/rock-paper-scissors",
+        "isExternal": true
+      },
+      {
+        "text": "Live Site",
+        "url": "https://nathandallas.github.io/rock-paper-scissors/",
+        "isExternal": true
+      }
+    ]
+  },
+  {
+    "imageSrc": "assets/rpspreview.png",
+    "imageAlt": "Pokemon Town Website Home Page",
+    "featuredText": "Featured Project",
+    "title": "Pokemon Town",
+    "description": "A website created for BrainStation's August 2021 hackathon and updated with mobile-first responsive design and new functionalities in 2025. This website uses the pokeAPI to show off a selection of pokemon you would expect to run into in a handful of towns in the Kanto Region.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "links": [
+      {
+        "text": "Code",
+        "url": "https://github.com/nathandallas/pokemon-town",
+        "isExternal": true
+      },
+      {
+        "text": "Live Site",
+        "url": "https://nathandallas.github.io/pokemon-town/",
+        "isExternal": true
+      }
+    ]
+  }
+]
