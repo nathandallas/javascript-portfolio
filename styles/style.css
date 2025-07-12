@@ -31,9 +31,15 @@ nav {
   list-style: none;
   font-size: 1.25rem;
 }
+.nav-links li:hover {
+  transform: scale(1.1);
+}
 
 .logo {
   font-size: 2rem;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 
 /* MOBILE NAV */
@@ -176,30 +182,43 @@ nav {
   text-align: center;
   background-color: #112240;
   border: 1px solid #64ffda;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: #64ffda;
   padding: 1rem 0;
-  min-width: 250px;
+  margin: 0 auto;
+  min-width: calc(100vw - 2rem);
 }
 .links a:hover {
   background-color: #64ffda;
   color: #112240;
-  border: 1px solid #112240;
+  transform: scale(1.1);
 }
 .links a:focus {
   background-color: rgba(100, 255, 218, 0.5647058824);
+}
+@media screen and (min-width: 768px) {
+  .links a {
+    min-width: 220px;
+  }
 }
 
 .project {
   margin: 3rem 0;
 }
 .project img {
-  display: none;
+  border: 1px solid rgba(100, 255, 218, 0.5647058824);
+  border-radius: 0.5rem;
+  max-width: calc(100vw - 2rem);
 }
 .project__container {
   position: relative;
   background-color: rgba(10, 25, 47, 0.6);
   height: auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #3c547e;
+}
+.project h4 {
+  margin-top: 1rem;
 }
 .project h3 {
   font-size: 1.5rem;
@@ -210,14 +229,17 @@ nav {
   }
 }
 .project p {
-  padding: 1rem 0;
+  color: white;
+  background-color: rgba(17, 34, 64, 0.5647058824);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .project ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0.75rem 0;
-  max-width: 65%;
+  max-width: calc(100vw - 2rem);
 }
 .project li {
   list-style: none;
@@ -227,29 +249,41 @@ nav {
   padding: 0.15rem 0.5rem;
 }
 
+.project:last-child .project__container {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 @media screen and (min-width: 768px) {
   .project {
-    margin: 1rem 0 6rem 0;
+    margin: 1rem 0 3rem 0;
   }
   .project ul {
     flex-wrap: nowrap;
+    max-width: 500px;
   }
   .project p {
-    background-color: rgba(17, 34, 64, 0.5647058824);
-    border-radius: 1rem;
-    width: 60%;
+    max-width: 60vw;
     padding: 1rem 2rem;
+  }
+  .project img {
+    min-width: 300px;
+    max-width: 60vw;
   }
 }
 @media screen and (min-width: 1200px) {
   .project img {
+    border: none;
     position: absolute;
     right: 0;
     display: block;
     filter: blur(0.005px);
-    height: 300px;
+    height: 250px;
     z-index: -1;
-    padding: 0 0 2rem 0;
+    padding: 0;
+  }
+  .project p {
+    width: 60%;
   }
 }
 .links a {
@@ -259,30 +293,43 @@ nav {
   text-align: center;
   background-color: #112240;
   border: 1px solid #64ffda;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: #64ffda;
   padding: 1rem 0;
-  min-width: 250px;
+  margin: 0 auto;
+  min-width: calc(100vw - 2rem);
 }
 .links a:hover {
   background-color: #64ffda;
   color: #112240;
-  border: 1px solid #112240;
+  transform: scale(1.1);
 }
 .links a:focus {
   background-color: rgba(100, 255, 218, 0.5647058824);
+}
+@media screen and (min-width: 768px) {
+  .links a {
+    min-width: 220px;
+  }
 }
 
 .project {
   margin: 3rem 0;
 }
 .project img {
-  display: none;
+  border: 1px solid rgba(100, 255, 218, 0.5647058824);
+  border-radius: 0.5rem;
+  max-width: calc(100vw - 2rem);
 }
 .project__container {
   position: relative;
   background-color: rgba(10, 25, 47, 0.6);
   height: auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #3c547e;
+}
+.project h4 {
+  margin-top: 1rem;
 }
 .project h3 {
   font-size: 1.5rem;
@@ -293,14 +340,17 @@ nav {
   }
 }
 .project p {
-  padding: 1rem 0;
+  color: white;
+  background-color: rgba(17, 34, 64, 0.5647058824);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .project ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0.75rem 0;
-  max-width: 65%;
+  max-width: calc(100vw - 2rem);
 }
 .project li {
   list-style: none;
@@ -310,29 +360,41 @@ nav {
   padding: 0.15rem 0.5rem;
 }
 
+.project:last-child .project__container {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 @media screen and (min-width: 768px) {
   .project {
-    margin: 1rem 0 6rem 0;
+    margin: 1rem 0 3rem 0;
   }
   .project ul {
     flex-wrap: nowrap;
+    max-width: 500px;
   }
   .project p {
-    background-color: rgba(17, 34, 64, 0.5647058824);
-    border-radius: 1rem;
-    width: 60%;
+    max-width: 60vw;
     padding: 1rem 2rem;
+  }
+  .project img {
+    min-width: 300px;
+    max-width: 60vw;
   }
 }
 @media screen and (min-width: 1200px) {
   .project img {
+    border: none;
     position: absolute;
     right: 0;
     display: block;
     filter: blur(0.005px);
-    height: 300px;
+    height: 250px;
     z-index: -1;
-    padding: 0 0 2rem 0;
+    padding: 0;
+  }
+  .project p {
+    width: 60%;
   }
 }
 footer {
@@ -374,6 +436,10 @@ footer {
 }
 .socials img:hover {
   transform: scale(1.1);
+}
+
+.credit {
+  padding-bottom: 2rem;
 }
 
 * {
@@ -426,8 +492,9 @@ h3 {
 
 h2 {
   font-size: 1.5rem;
-  width: 100%;
+  margin-right: 2rem;
 }
+
 .alt {
   font-size: 2.5rem;
   line-height: 2.25rem;
@@ -463,13 +530,15 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid #233554;
-  padding-bottom: 2rem;
+  min-height: 85vh;
 }
 @media screen and (min-width: 768px) {
   #hero {
+    padding-bottom: 2rem;
+    padding-top: 0;
     margin: auto;
-    height: 70vh;
+    min-height: 0;
+    height: 80vh;
     max-height: 800px;
     border-bottom: none;
     white-space: nowrap;
@@ -484,9 +553,8 @@ button {
   padding: 1rem 3rem;
   background-color: #112240;
   border: 1px solid #64ffda;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: #64ffda;
-  max-width: 80vw;
 }
 button:hover {
   background-color: #64ffda;
@@ -518,7 +586,13 @@ button:focus {
 
 /* SECTION & HEADERS */
 section {
-  margin: 2rem;
+  margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  section {
+    margin: 6rem auto;
+    width: 60vw;
+  }
 }
 @media screen and (min-width: 768px) {
   section {
@@ -527,13 +601,16 @@ section {
     max-width: 1000px;
   }
 }
+section h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
 
 .header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: stretch;
   white-space: nowrap;
-  width: 100%;
 }
 .header span {
   display: none;
@@ -541,7 +618,7 @@ section {
 @media screen and (min-width: 768px) {
   .header span {
     display: inline-block;
-    border-bottom: 1px solid #233554;
+    border-bottom: 2px solid #3c547e;
     width: 100%;
     float: right;
     overflow: auto;

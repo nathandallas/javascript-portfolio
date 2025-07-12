@@ -54,11 +54,7 @@ h3 {
 
 h2 {
   font-size: 1.5rem;
-  width: 100%;
-  @include tablet {
-  }
-  @include desktop {
-  }
+  margin-right: 2rem;
 }
 .alt {
   font-size: 2.5rem;
@@ -93,11 +89,13 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid $lightestnavy;
-  padding-bottom: 2rem;
+  min-height: 85vh;
   @include tablet {
+    padding-bottom: 2rem;
+    padding-top: 0;
     margin: auto;
-    height: 70vh;
+    min-height: 0;
+    height: 80vh;
     max-height: 800px;
     border-bottom: none;
     white-space: nowrap;
@@ -112,9 +110,9 @@ button {
   padding: 1rem 3rem;
   background-color: $lightnavy;
   border: 1px solid $green;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: $green;
-  max-width: 80vw;
+
   &:hover {
     background-color: $green;
     color: $lightnavy;
@@ -145,25 +143,34 @@ button {
 /* SECTION & HEADERS */
 
 section {
-  margin: 2rem;
+  margin: 1rem;
+
+  @include tablet {
+    margin: 6rem auto;
+    width: 60vw;
+  }
   @include tablet {
     margin: 6rem auto;
     width: 60vw;
     max-width: 1000px;
   }
+
+  & h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
 }
 
 .header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: stretch;
   white-space: nowrap;
-  width: 100%;
   & span {
     display: none;
     @include tablet {
       display: inline-block;
-      border-bottom: 1px solid $lightestnavy;
+      border-bottom: 2px solid $lightestnavy;
       width: 100%;
       float: right;
       overflow: auto;

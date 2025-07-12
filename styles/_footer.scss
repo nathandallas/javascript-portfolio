@@ -6,13 +6,13 @@ footer {
 }
 
 .socials {
-    & span {
-        background-color: $green;
-        height: 200px;
-        width: 1px;
-        position: relative;
-        bottom: -10px;
-    }
+  & span {
+    background-color: $green;
+    height: 200px;
+    width: 1px;
+    position: relative;
+    bottom: -10px;
+  }
   @include tablet {
     display: flex;
     flex-direction: column;
@@ -39,4 +39,8 @@ footer {
       transform: scale(1.1);
     }
   }
+}
+
+.credit {
+  padding-bottom: 2rem;
 }

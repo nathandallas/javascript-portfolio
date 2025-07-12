@@ -7,30 +7,41 @@
   text-align: center;
   background-color: $lightnavy;
   border: 1px solid $green;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: $green;
   padding: 1rem 0;
-  min-width: 250px;
+  margin: 0 auto;
+  min-width: calc(100vw - 2rem);
 
   &:hover {
     background-color: $green;
     color: $lightnavy;
-    border: 1px solid $lightnavy;
+    transform: scale(1.1);
   }
   &:focus {
     background-color: $green90;
+  }
+  @include tablet {
+    min-width: 220px;
   }
 }
 
 .project {
   margin: 3rem 0;
   & img {
-    display: none;
+    border: 1px solid $green90;
+    border-radius: 0.5rem;
+    max-width: calc(100vw - 2rem);
   }
   &__container {
     position: relative;
     background-color: $navylowop;
     height: auto;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid $lightestnavy;
+  }
+  & h4 {
+    margin-top: 1rem;
   }
   & h3 {
     font-size: 1.5rem;
@@ -39,14 +50,17 @@
     }
   }
   & p {
-    padding: 1rem 0;
+    color: white;
+    background-color: $lightnavy90;
+    border-radius: 1rem;
+    padding: 1rem;
   }
   & ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0.75rem 0;
-    max-width: 65%;
+    max-width: calc(100vw - 2rem);
   }
   & li {
     list-style: none;
@@ -57,17 +71,25 @@
   }
 }
 
+.project:last-child .project__container {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 @include tablet {
   .project {
-    margin: 1rem 0 6rem 0;
+    margin: 1rem 0 3rem 0;
     & ul {
       flex-wrap: nowrap;
+      max-width: 500px;
     }
     & p {
-      background-color: $lightnavy90;
-      border-radius: 1rem;
-      width: 60%;
+      max-width: 60vw;
       padding: 1rem 2rem;
+    }
+    & img {
+      min-width: 300px;
+      max-width: 60vw;
     }
   }
 }
@@ -75,13 +97,17 @@
 @include desktop {
   .project {
     & img {
+      border: none;
       position: absolute;
       right: 0;
       display: block;
       filter: blur(0.005px);
-      height: 300px;
+      height: 250px;
       z-index: -1;
-      padding: 0 0 2rem 0;
+      padding: 0;
+    }
+    & p {
+      width: 60%;
     }
   }
 }
