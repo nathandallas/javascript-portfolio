@@ -1,4 +1,4 @@
-fetch("/utils/projects.json")
+fetch("utils/projects.json")
   .then(response => response.json())
   .then(data => {
     initProjectCards("#projects-container", data);
