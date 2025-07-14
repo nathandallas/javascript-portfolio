@@ -90,7 +90,7 @@ nav {
 }
 .menu-links.open {
   min-height: 300vh;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .menu-links a {
   display: block;
@@ -191,7 +191,11 @@ nav {
 .links a:hover {
   background-color: #64ffda;
   color: #112240;
-  transform: scale(1.1);
+}
+@media screen and (min-width: 1200px) {
+  .links a:hover {
+    transform: scale(1.1);
+  }
 }
 .links a:focus {
   background-color: rgba(100, 255, 218, 0.5647058824);
@@ -302,7 +306,11 @@ nav {
 .links a:hover {
   background-color: #64ffda;
   color: #112240;
-  transform: scale(1.1);
+}
+@media screen and (min-width: 1200px) {
+  .links a:hover {
+    transform: scale(1.1);
+  }
 }
 .links a:focus {
   background-color: rgba(100, 255, 218, 0.5647058824);

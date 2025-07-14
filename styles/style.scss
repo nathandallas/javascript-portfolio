@@ -149,11 +149,6 @@ section {
     margin: 6rem auto;
     width: 60vw;
   }
-  @include tablet {
-    margin: 6rem auto;
-    width: 60vw;
-    max-width: 1000px;
-  }
 
   & h2 {
     font-size: 2rem;

@@ -1,7 +1,7 @@
 fetch("utils/projects.json")
   .then(response => response.json())
   .then(data => {
-    initProjectCards("#projects-container", data);
+    initProjectCards("#projects", data);
   })
   .catch(error => {
     console.error("Error loading project data:", error);

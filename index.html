@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav class="desktop-nav">
-        <div class="logo"><a href="/">N</a></div>
+        <div class="logo"><a href="#home">N</a></div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -22,7 +21,7 @@
       </nav>
 
       <nav id="hamburger-nav">
-        <div class="logo"><a href="/">N</a></div>
+        <div class="logo"><a href="#home">N</a></div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" id="toggle">
             <span></span>
@@ -32,9 +31,6 @@
           <ul class="menu-links">
             <li>
               <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
             </li>
             <li>
               <a href="#projects">Projects</a>
@@ -53,7 +49,7 @@
       <h2 class="alt">a Front End Web Developer.</h2>
 
       <div class="btn-container">
-        <button onclick="location.href=';'">Download CV</button>
+        <button onclick="location.href='/assets/resume.pdf';">Download CV</button>
         <button onclick="location.href='https://github.com/nathandallas';">GitHub</button>
       </div>
     </section>
@@ -74,42 +70,8 @@
       </div>
     </section>
 
-    <!-- TECHNOLOGIES SECTION -->
-
-    <section id="skills">
-      <div class="skills header">
-        <h2>Technologies Used</h2>
-        <span></span>
-      </div>
-      <div class="skills-lists">
-        <ul>
-          <h4>Frameworks</h4>
-          <li>React</li>
-        </ul>
-        <ul>
-          <h4>Languages</h4>
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Python</li>
-        </ul>
-        <ul>
-          <h4>Databases</h4>
-          <li>Supabase</li>
-        </ul>
-        <ul>
-          <h4>Tools</h4>
-          <li>GIT</li>
-          <li>Jira</li>
-          <li>Postman</li>
-          <li>Visual Studio Code</li>
-        </ul>
-      </div>
-    </section>
-
     <!-- PROJECTS SECTION -->
-    <section id="projects-container">
+    <section id="projects">
       <div class="projects header">
         <h2>Some Things I've Built</h2>
         <span></span>
@@ -128,9 +90,8 @@
 
     <aside class="socials-desktop">
       <div class="socials">
-        <a href="http://github.com/nathandallas"><img src="assets/github.svg" alt="GitHub" /></a>
-        <a href="http://github.com/nathandallas"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
-        <a href="http://github.com/nathandallas"><img src="assets/codewars.svg" alt="CodeWars" /></a>
+        <a href="https://github.com/nathandallas"><img src="assets/github.svg" alt="GitHub" /></a>
+        <a href="https://codepen.io/nathandallas"><img src="assets/codepen.svg" alt="CodePen" /></a>
         <span></span>
       </div>
     </aside>
@@ -138,9 +99,8 @@
     <footer>
       <div class="socials-mobile">
         <div class="socials">
-          <a href="httpL//github.com/nathandallas"><img src="assets/github.svg" alt="GitHub" /></a>
-          <a href="httpL//github.com/nathandallas"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
-          <a href="httpL//github.com/nathandallas"><img src="assets/codewars.svg" alt="CodeWars" /></a>
+          <a href="https://github.com/nathandallas"><img src="assets/github.svg" alt="GitHub" /></a>
+          <a href="https://codepen.io/nathandallas"><img src="assets/codepen.svg" alt="CodePen" /></a>
         </div>
       </div>
       <div class="credit">Designed and Built by <a href="http://github.com/nathandallas">Nathan Challender</a></div>

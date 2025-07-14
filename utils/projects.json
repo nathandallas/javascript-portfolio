@@ -1,5 +1,20 @@
 [
   {
+    "imageSrc": "assets/drawllab.jpeg",
+    "imageAlt": "Drawllab",
+    "featuredText": "Featured Project",
+    "title": "Drawllab",
+    "description": "Created for BrainStation's 2021 Capstone, this drawing application allows you to doodle and play around with wireframes.",
+    "technologies": ["React", "JavaScript", "HTML Canvas"],
+    "links": [
+      {
+        "text": "Code",
+        "url": "https://github.com/nathandallas/drawllab",
+        "isExternal": true
+      }
+    ]
+  },
+  {
     "imageSrc": "assets/qrcpreview.png",
     "imageAlt": "QR Code Generator Preview",
     "featuredText": "Featured Project",
@@ -13,7 +28,7 @@
         "isExternal": true
       },
       {
-        "text": "Live Site",
+        "text": "Demo",
         "url": "https://nathandallas.github.io/qr-code-generator/",
         "isExternal": true
       }
@@ -33,14 +48,14 @@
         "isExternal": true
       },
       {
-        "text": "Live Site",
+        "text": "Demo",
         "url": "https://nathandallas.github.io/rock-paper-scissors/",
         "isExternal": true
       }
     ]
   },
   {
-    "imageSrc": "assets/rpspreview.png",
+    "imageSrc": "assets/pkmnpreview.png",
     "imageAlt": "Pokemon Town Website Home Page",
     "featuredText": "Featured Project",
     "title": "Pokemon Town",
@@ -53,7 +68,7 @@
         "isExternal": true
       },
       {
-        "text": "Live Site",
+        "text": "Demo",
         "url": "https://nathandallas.github.io/pokemon-town/",
         "isExternal": true
       }

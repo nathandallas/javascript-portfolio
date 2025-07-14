@@ -16,7 +16,9 @@
   &:hover {
     background-color: $green;
     color: $lightnavy;
-    transform: scale(1.1);
+    @include desktop {
+      transform: scale(1.1);
+    }
   }
   &:focus {
     background-color: $green90;
@@ -84,12 +86,10 @@
       max-width: 500px;
     }
     & p {
-      max-width: 60vw;
       padding: 1rem 2rem;
     }
     & img {
       min-width: 300px;
-      max-width: 60vw;
     }
   }
 }
