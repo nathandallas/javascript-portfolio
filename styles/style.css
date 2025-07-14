@@ -139,40 +139,74 @@ nav {
   align-items: center;
 }
 
-.skills-lists {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  flex-wrap: wrap;
+.about-me__container p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
-.skills-lists ul {
-  width: 50%;
-  padding: 1rem 0;
+
+form {
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
-  .skills-lists ul {
-    width: 23%;
+  form {
+    width: 50%;
+    max-width: 600px;
   }
 }
-.skills-lists li {
-  list-style: none;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  font-size: 1rem;
-  background-color: #112b3a;
-  color: #a8b2d1;
+
+label {
+  font-family: "Space Mono", monospace;
+  color: #64ffda;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+input,
+textarea {
+  margin: 1rem 0;
+  width: 92%;
+  padding: 1rem;
+}
+
+input {
+  background-color: #3c547e;
+  border: 1px solid rgba(100, 255, 218, 0.5647058824);
   border-radius: 0.5rem;
-  border: 1px solid #112240;
+  color: #112240;
+  font-size: 1.25rem;
 }
-@media screen and (min-width: 768px) {
-  .skills-lists li {
-    min-width: 150px;
-  }
+input:hover {
+  background-color: rgba(100, 255, 218, 0.5647058824);
+  color: #112240;
+  border: 1px solid #64ffda;
 }
-@media screen and (min-width: 1200px) {
-  .skills-lists li {
-    font-size: 1.5rem;
-  }
+input:focus {
+  background-color: #112240;
+  color: #ccd6f6;
+  border: 2px solid #64ffda;
+}
+
+textarea {
+  height: 12rem;
+  background-color: #3c547e;
+  border: 1px solid rgba(100, 255, 218, 0.5647058824);
+  border-radius: 0.5rem;
+  color: #112240;
+  font-size: 1.25rem;
+}
+textarea:hover {
+  background-color: rgba(100, 255, 218, 0.5647058824);
+  color: #112240;
+  border: 1px solid #64ffda;
+}
+textarea:focus {
+  background-color: #112240;
+  color: #ccd6f6;
+  border: 2px solid #64ffda;
+}
+
+button {
+  width: 100%;
 }
 
 .links a {
@@ -267,127 +301,10 @@ nav {
     max-width: 500px;
   }
   .project p {
-    max-width: 60vw;
     padding: 1rem 2rem;
   }
   .project img {
-    min-width: 300px;
-    max-width: 60vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project img {
-    border: none;
-    position: absolute;
-    right: 0;
-    display: block;
-    filter: blur(0.005px);
-    height: 250px;
-    z-index: -1;
-    padding: 0;
-  }
-  .project p {
-    width: 60%;
-  }
-}
-.links a {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-size: 1rem;
-  text-align: center;
-  background-color: #112240;
-  border: 1px solid #64ffda;
-  border-radius: 0.5rem;
-  color: #64ffda;
-  padding: 1rem 0;
-  margin: 0 auto;
-  min-width: calc(100vw - 2rem);
-}
-.links a:hover {
-  background-color: #64ffda;
-  color: #112240;
-}
-@media screen and (min-width: 1200px) {
-  .links a:hover {
-    transform: scale(1.1);
-  }
-}
-.links a:focus {
-  background-color: rgba(100, 255, 218, 0.5647058824);
-}
-@media screen and (min-width: 768px) {
-  .links a {
-    min-width: 220px;
-  }
-}
-
-.project {
-  margin: 3rem 0;
-}
-.project img {
-  border: 1px solid rgba(100, 255, 218, 0.5647058824);
-  border-radius: 0.5rem;
-  max-width: calc(100vw - 2rem);
-}
-.project__container {
-  position: relative;
-  background-color: rgba(10, 25, 47, 0.6);
-  height: auto;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid #3c547e;
-}
-.project h4 {
-  margin-top: 1rem;
-}
-.project h3 {
-  font-size: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .project h3 {
-    font-size: 1.75rem;
-  }
-}
-.project p {
-  color: white;
-  background-color: rgba(17, 34, 64, 0.5647058824);
-  border-radius: 1rem;
-  padding: 1rem;
-}
-.project ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0.75rem 0;
-  max-width: calc(100vw - 2rem);
-}
-.project li {
-  list-style: none;
-  background-color: #112b3a;
-  color: #64ffda;
-  border-radius: 0.5rem;
-  padding: 0.15rem 0.5rem;
-}
-
-.project:last-child .project__container {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-@media screen and (min-width: 768px) {
-  .project {
-    margin: 1rem 0 3rem 0;
-  }
-  .project ul {
-    flex-wrap: nowrap;
-    max-width: 500px;
-  }
-  .project p {
-    max-width: 60vw;
-    padding: 1rem 2rem;
-  }
-  .project img {
-    min-width: 300px;
-    max-width: 60vw;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -522,6 +439,11 @@ h4 {
   font-size: 1.25rem;
 }
 
+.highlight {
+  font-weight: 700;
+  color: #64ffda;
+}
+
 .logo {
   color: #64ffda;
   border: 2px solid #64ffda;
@@ -600,13 +522,6 @@ section {
   section {
     margin: 6rem auto;
     width: 60vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  section {
-    margin: 6rem auto;
-    width: 60vw;
-    max-width: 1000px;
   }
 }
 section h2 {

@@ -1,7 +1,6 @@
 @import "nav";
 @import "about";
-@import "skills";
-@import "projects";
+@import "contact";
 @import "projects";
 @import "footer";
 @import "partials";
@@ -71,6 +70,11 @@ h4 {
   font-family: "Space Mono", monospace;
   color: $green;
   font-size: 1.25rem;
+}
+
+.highlight {
+  font-weight: 700;
+  color: $green;
 }
 
 .logo {

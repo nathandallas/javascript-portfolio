@@ -49,7 +49,7 @@
       <h2 class="alt">a Front End Web Developer.</h2>
 
       <div class="btn-container">
-        <button onclick="location.href='/assets/resume.pdf';">Download CV</button>
+        <button onclick="location.href='https://nathandallas.github.io/portfolio/assets/resume.pdf';">Resume</button>
         <button onclick="location.href='https://github.com/nathandallas';">GitHub</button>
       </div>
     </section>
@@ -62,8 +62,29 @@
       <div class="about-me">
         <div class="about-me__container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem suscipit quis ad dolorum deleniti aliquam officia labore ipsum nemo atque asperiores tempora cum quod, optio harum doloremque in repudiandae. Lorem ipsum dolor sit
-            amet consectetur, adipisicing elit. Neque ipsam, impedit quidem ipsa magni earum obcaecati aliquid nemo modi repudiandae cupiditate optio possimus aliquam atque in culpa excepturi iure quisquam.
+            I am an enthusiastic <span style="color: #64ffda; font-weight: 700">entry-level web developer</span> with a passion for building
+            attractive, functional applications. I currently live in the beautiful state of
+            <span style="color: #64ffda; font-weight: 700">New Hampshire</span>, where I balance my love for technology with nature by
+            hiking in the White Mountains!
+          </p>
+          <p>
+            My background in <span style="color: #64ffda; font-weight: 700">insurance, underwriting, sales, and financial services</span> at
+            companies like Progressive and Suncoast Credit Union has sharpened my
+            <span style="color: #64ffda; font-weight: 700">problem-solving, risk assessment, and client-focused mindset</span>—skills that
+            translate seamlessly into development. Now, I'm channeling that experience into coding, leveraging my technical training from
+            FGCU and BrainStation's Web Development Bootcamp and ongoing self-study in
+            <span style="color: #64ffda; font-weight: 700">JavaScript, React, and Node.js</span>
+          </p>
+          <p>
+            I love <span style="color: #64ffda; font-weight: 700">turning ideas into reality through code</span> and am currently expanding
+            my knowledge through hands-on projects, online courses, and collaboration with other developers. My recent work migrating
+            internal systems to Salesforce at Progressive reinforced my eye for
+            <span style="color: #64ffda; font-weight: 700">detail-oriented solutions and accessible design</span>.
+          </p>
+          <p>
+            My goal is to join a team where I can
+            <span style="color: #64ffda; font-weight: 700">contribute my unique blend of technical and analytical skills</span>, learn from
+            experienced professionals, and grow as a developer. Let's connect and build something great together!
           </p>
         </div>
         <img src="assets/about.svg" alt="Laptop" />
@@ -85,7 +106,25 @@
         <h2>Let's Get In Touch!</h2>
         <span></span>
       </div>
-      Contact
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="bdbedcb6-c8d9-4908-ab6b-174a7a0765fe" />
+        <div class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea name="message" required></textarea>
+        </div>
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+        <button type="submit">Submit Form</button>
+      </form>
     </section>
 
     <aside class="socials-desktop">

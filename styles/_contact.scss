@@ -1,1 +1,66 @@
 @import "partials";
+
+form {
+  margin: 0 auto;
+  @include tablet {
+  }
+  @include desktop {
+    width: 50%;
+    max-width: 600px;
+  }
+}
+
+label {
+  font-family: "Space Mono", monospace;
+  color: $green;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+input,
+textarea {
+  margin: 1rem 0;
+  width: 92%;
+  padding: 1rem;
+}
+
+input {
+  background-color: $lightestnavy;
+  border: 1px solid $green90;
+  border-radius: 0.5rem;
+  color: $lightnavy;
+  font-size: 1.25rem;
+  &:hover {
+    background-color: $green90;
+    color: $lightnavy;
+    border: 1px solid $green;
+  }
+  &:focus {
+    background-color: $lightnavy;
+    color: $lightestslate;
+    border: 2px solid $green;
+  }
+}
+
+textarea {
+  height: 12rem;
+  background-color: $lightestnavy;
+  border: 1px solid $green90;
+  border-radius: 0.5rem;
+  color: $lightnavy;
+  font-size: 1.25rem;
+  &:hover {
+    background-color: $green90;
+    color: $lightnavy;
+    border: 1px solid $green;
+  }
+  &:focus {
+    background-color: $lightnavy;
+    color: $lightestslate;
+    border: 2px solid $green;
+  }
+}
+
+button {
+  width: 100%;
+}
